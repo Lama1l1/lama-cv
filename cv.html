@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lama Saad Alosaimi - CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Georgia, serif;
-      background-color: #f5f5f5;
-      margin: 40px;
+      background: #fff;
     }
 
-    .left-column, .right-column {
-      width: 45%;
-      float: left;
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left, .right {
+      padding: 40px;
       box-sizing: border-box;
     }
 
-    .right-column {
-      margin-left: 4%;
+    .left {
+      width: 40%;
+      background: #f5f1ee;
+    }
+
+    .right {
+      width: 60%;
     }
 
     h1 {
       font-size: 28px;
-      color: #2a3d66;
+      color: #000;
+      margin: 0 0 20px;
     }
 
     .section {
-      background-color: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 15px; 
+      margin-bottom: 30px;
     }
 
-    strong {
-      color: #0077b5;
+    .section-title {
       font-size: 20px;
-      display: block;
+      color: #7a6a58;
       margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
 
     ul {
-      list-style-type: disc;
       padding-left: 20px;
     }
 
@@ -49,66 +57,57 @@
       margin-bottom: 8px;
     }
 
-    a {
-      color: #0077b5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #005f91;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    td {
-      border: 1px solid #ccc;
-      padding: 6px;
+    p, li, td {
       font-size: 14px;
+      line-height: 1.6;
     }
 
-    p {
-      color: #555;
-      margin: 10px 0;
+    .personal-table {
+      width: 100%;
+      border: 2px solid #000;
+      border-collapse: collapse;
+      border-radius: 10px;
+    }
+
+    .personal-table td {
+      border: 1px solid #000;
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    .personal-table i {
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
 
-  <div>
-    <div class="left-column">
+  <div class="container">
+    <div class="left">
       <h1>Lama Saad Alosaimi</h1>
 
       <div class="section">
-        <strong>Personal Information</strong>
-        <table>
+        <div class="section-title">Personal Information</div>
+        <table class="personal-table">
           <tr>
-            <td><strong>Location</strong></td>
+            <td><i class="fas fa-map-marker-alt"></i></td>
             <td>Shaqra, Saudi Arabia</td>
           </tr>
           <tr>
-            <td><strong>Email</strong></td>
-            <td><a href="mailto:lamaalosaimi1l1@gmail.com">lamaalosaimi1l1@gmail.com</a></td>
-          </tr>
-          <tr>
-            <td><strong>Phone</strong></td>
+            <td><i class="fas fa-phone"></i></td>
             <td>+966 508 337 574</td>
           </tr>
         </table>
       </div>
 
       <div class="section">
-        <strong>Education</strong>
+        <div class="section-title">Education</div>
         <p>Shaqra University — Bachelor’s in Computer Science<br>
         Expected Graduation: 2027</p>
       </div>
 
       <div class="section">
-        <strong>Technical Skills</strong>
+        <div class="section-title">Technical Skills</div>
         <ul>
           <li>Programming Languages: Python</li>
           <li>Web Development: Frontend (HTML, CSS)</li>
@@ -119,7 +118,7 @@
       </div>
 
       <div class="section">
-        <strong>Soft Skills</strong>
+        <div class="section-title">Soft Skills</div>
         <ul>
           <li>Communication</li>
           <li>Problem Solving</li>
@@ -129,52 +128,50 @@
           <li>Leadership</li>
         </ul>
       </div>
+    </div>
+
+    <div class="right">
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul>
+          <li>Database Foundations – Coursera, 2023</li>
+          <li>Python Essentials – Cisco, 2023</li>
+          <li>Python Basics – Coursera, 2024</li>
+          <li>Introduction to Packet Tracer – Cisco, 2024</li>
+          <li>Basics of Cisco Networking – Coursera, 2024</li>
+          <li>Linear Algebra for ML and Data Science – Coursera, 2024</li>
+          <li>Calculus for ML and Data Science – Coursera, 2024</li>
+          <li>Probability & Statistics for ML and Data Science – Coursera, 2024</li>
+          <li>HTML Essentials – Coursera, 2025</li>
+        </ul>
+      </div>
 
       <div class="section">
-        <strong>Languages</strong>
+        <div class="section-title">Experience</div>
+        <ul>
+          <li>Student Council Member at Cyber Security Club, Shaqra University</li>
+          <li>Member – Logistics Support Committee at (GDSC), Shaqra University</li>
+          <li>Content Writer – Media Committee at (GDSC), Shaqra University</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Volunteering</div>
+        <ul>
+          <li>Data Camp Organizer – SASDS, Feb-Mar 2025</li><li>Hackathon Organizer – Shaqra University, Mar 2024</li>
+          <li>Founding Day Volunteer – Shaqra University, Feb 2025</li>
+          <li>Conference Assistant – Shaqra University, Feb 2025</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Languages</div>
         <ul>
           <li>Arabic: Native</li>
           <li>English: Intermediate</li>
         </ul>
       </div>
     </div>
-
-    <div class="right-column">
-      <div class="section">
-        <strong>Certifications</strong>
-        <ul>
-          <li>Database Foundations – Coursera, 2023</li>
-          <li>Python Essentials – Cisco Networking Academy, 2023</li>
-          <li>Python Basics – Coursera, 2024</li>
-          <li>Introduction to Packet Tracer – Cisco, 2024</li>
-          <li>Basics of Cisco Networking – Coursera, 2024</li>
-          <li>Linear Algebra for ML – Coursera, 2024</li>
-          <li>Calculus for ML – Coursera, 2024</li>
-          <li>Probability & Statistics for ML – Coursera, 2024</li>
-          <li>HTML Essentials – Coursera, 2025</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <strong>Experience</strong>
-        <ul>
-          <li>Student Council Member – Cyber Security Club</li>
-          <li>Member – Logistics Committee, GDSC</li>
-          <li>Content Writer – Media Committee, GDSC</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <strong>Volunteering</strong>
-        <ul>
-          <li>Data Camp Organizer – SASDS, Feb–Mar 2025</li>
-          <li>Hackathon Organizer – Shaqra University, Mar 2024</li>
-          <li>Founding Day Volunteer – Feb 2025</li>
-          <li>Conference Assistant – College of Education, Feb 2025</li>
-        </ul>
-      </div>
-    </div>
   </div>
-
 </body>
 </html>
